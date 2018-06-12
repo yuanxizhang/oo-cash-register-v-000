@@ -7,4 +7,10 @@ def CashRegister
     @@total << @count * @prince 
   end 
   
-  def 
+  def self.total 
+    @@total 
+  end
+  
+  def self.apply_discount  
+    discounted = @@total - 0.2 * @@total 
+  end 
