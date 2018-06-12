@@ -12,5 +12,5 @@ def CashRegister
   end
   
   def self.apply_discount  
-    discounted = @@total - 0.2 * @@total 
+    discounted = self.total - 0.2 * self.total 
   end 
