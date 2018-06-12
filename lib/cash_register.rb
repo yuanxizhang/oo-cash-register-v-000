@@ -1,9 +1,10 @@
 # Build the CashRegister class 
 class CashRegister 
-  attr_accessor :total, :last_charge, :employeee_discount
+  attr_accessor :total, :last_charge, :discount
   
-  def initialize(emplyee_discount = 20)
+  def initialize(discount = 20)
     @total = 0
+    @discount = discount
   end 
   
   def total 
