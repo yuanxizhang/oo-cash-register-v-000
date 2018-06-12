@@ -18,7 +18,8 @@ class CashRegister
   end 
   
   def items
-    
+    @items 
+  end 
   
   def apply_discount 
     if @discount == 20
