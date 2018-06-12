@@ -24,7 +24,8 @@ class CashRegister
       discount_amount = 0
       @total = @total - discount_amount
       return "There are no discount to apply."
-      
+    else
+      break
     end
   end 
 
