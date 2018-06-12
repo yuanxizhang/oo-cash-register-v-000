@@ -1,6 +1,6 @@
 # Build the CashRegister class 
 class CashRegister 
-  attr_accessor @total, @last_charge
+  attr_accessor :total, :last_charge
   
   def initialize(total = nil)
     @total = total
