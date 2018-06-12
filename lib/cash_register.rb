@@ -4,7 +4,7 @@ def CashRegister
   @@total = 0.0
   
   def initialize 
-    @@total << @count * @prince 
+    @@total += @count * @prince 
   end 
   
   def self.total 
@@ -14,3 +14,5 @@ def CashRegister
   def self.apply_discount  
     discounted = self.total - 0.2 * self.total 
   end 
+
+  def self.void_last_transaction
