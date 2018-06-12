@@ -23,7 +23,7 @@ class CashRegister
     elsif @discount == 0 
       discount_amount = 0
       @total = @total - discount_amount
-      return "There are no discount to apply."
+      return "There is no discount to apply."
     else
       return "Discount unknow."
     end
