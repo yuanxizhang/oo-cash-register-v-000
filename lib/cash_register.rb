@@ -1,6 +1,6 @@
 # Build the CashRegister class 
 def CashRegister 
-  attr_accessor @total, @last
+  attr_accessor @total, @last_charge
   
   def initialize(total = nil)
     @total = total
@@ -11,7 +11,10 @@ def CashRegister
   end
   
   def apply_discount  
-    @total -= 0.2 * @total 
+    @total * 0.8
   end 
 
-  def self.void_last_transaction
+  def self.void_last_transaction 
+    @total - @last_charge 
+  end 
+end
