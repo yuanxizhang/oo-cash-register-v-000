@@ -17,7 +17,7 @@ class CashRegister
     quantity.times do
         @items << title
     end
-    @last_charge = 
+    @last_charge = price * quantity
   end 
   
   def items
