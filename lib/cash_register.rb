@@ -17,7 +17,8 @@ class CashRegister
   
   def apply_discount 
     discount_amount = (@total * 20)/100.00
-    @total -= discount_amount
+    new_total = @total - discount_amount
+    return "After the discount, the total comes to $#{new_total}."
   end 
 
   def self.void_last_transaction 
