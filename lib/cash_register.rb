@@ -1,18 +1,17 @@
 # Build the CashRegister class 
 def CashRegister 
-  attr_accessor :item :count :price
-  @@total = 0.0
+  attr_accessor @total, @last
   
-  def initialize 
-    @@total += @count * @prince 
+  def initialize(total = nil)
+    @total = total
   end 
   
-  def self.total 
-    @@total 
+  def total 
+    @total 
   end
   
-  def self.apply_discount  
-    discounted = self.total - 0.2 * self.total 
+  def apply_discount  
+    @total -= 0.2 * @total 
   end 
 
   def self.void_last_transaction
