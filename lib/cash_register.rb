@@ -1,5 +1,5 @@
 # Build the CashRegister class 
-def CashRegister 
+class CashRegister 
   attr_accessor @total, @last_charge
   
   def initialize(total = nil)
